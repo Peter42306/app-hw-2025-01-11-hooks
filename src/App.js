@@ -7,6 +7,7 @@ import ChangerTitle from './components/ChangerTitle/ChangerTitle';
 import SimpleTimer from './components/SimpleTimer/SimpleTimer';
 import Task1Form1 from './components/Task1Form1/Task1Form1';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Task1Form2 from './components/Task1Form2/Task1Form2';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         {/* <User2></User2> */}
         {/* <ChangerTitle></ChangerTitle> */}
         {/* <SimpleTimer></SimpleTimer> */}
-        <Task1Form1></Task1Form1>
+        {/* <Task1Form1></Task1Form1> */}
+        <Task1Form2></Task1Form2>
     </>
   );
 }

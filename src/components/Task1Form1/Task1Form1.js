@@ -17,20 +17,26 @@ const Task1Form1 = () => {
   
   return(
     <Container className='mt-3'>      
-      <Card>      
-      <Card.Header>{message.sender?.trim() || "Name of message sender"}</Card.Header>
-      <Card.Body>{message.text?.trim() || "Text of message"}</Card.Body>
-      </Card>      
-      <hr></hr>
-
       <div className='mt-3'>
-        <Button className='w-100 mb-3' variant='secondary' disabled>Add new message</Button>      
+        <Button 
+          className='w-100 mb-3' 
+          variant='secondary' 
+          disabled
+        >
+          Add new message
+        </Button>      
+        
         <FloatingLabel
           controlId='floatingInput'
           label="Your name"
           className='mb-3'
         >
-        <Form.Control type='text' placeholder='' value={message.sender} onChange={handleSenderChange}></Form.Control>
+          <Form.Control 
+            type='text' 
+            placeholder='' 
+            value={message.sender} 
+            onChange={handleSenderChange}
+          ></Form.Control>
         </FloatingLabel>
 
         <FloatingLabel
@@ -38,12 +44,29 @@ const Task1Form1 = () => {
           label="Your message"
           className='mb-3'
         >
-        <Form.Control type='textarea' placeholder='' value={message.text} onChange={handleTextChange}></Form.Control>
+          <Form.Control 
+            type='textarea' 
+            placeholder='' 
+            value={message.text} 
+            onChange={handleTextChange}
+          ></Form.Control>        
         </FloatingLabel>      
 
-        <Button className='w-100'>Send message</Button>
-      </div>     
+        <Button 
+          className='w-100'
+        >
+          Send message
+        </Button>
+    </div>     
+    <hr></hr>
 
+      <Card>      
+      <Card.Header>{message.sender?.trim() || "Name of message sender"}</Card.Header>
+      <Card.Body>{message.text?.trim() || "Text of message"}</Card.Body>
+      </Card>      
+      <hr></hr>
+
+      
     </Container>    
   );
 }
