@@ -11,9 +11,15 @@ import Task1Form2 from './components/Task1Form2/Task1Form2';
 import CalclulatorExchangeInput from './components/CalclulatorExchangeInput/CalclulatorExchangeInput';
 import CalculatorExchangeResult from './components/CalculatorExchangeResult/CalculatorExchangeResult';
 import { useState } from 'react';
+import { Container } from 'react-bootstrap';
 
 
 function App() {
+  
+  
+  // Currency exchange calculator 
+  // Components CalclulatorExchangeInput & CalculatorExchangeResult
+
   const [currency, setCurrency] = useState("");
   const [amount, setAmount] = useState(null);
   const [exchangeRate, setExchangeRate] = useState(null);
@@ -36,6 +42,7 @@ function App() {
   };
 
   return (
+    
     <>
         {/* <User></User> */}
         {/* <User1></User1> */}
@@ -50,13 +57,15 @@ function App() {
           onCurrencyChange={handleCurrencyChange}
           onAmountChange={handleAmountChange}
         />
-
         <CalculatorExchangeResult
           amount={amount}
           currency={currency}
           exchangeRate={exchangeRate}
         />
+
     </>
+
+
   );
 }
 
