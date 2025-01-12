@@ -1,3 +1,7 @@
+Added currency exchange calculator (components CalclulatorExchangeInput & CalculatorExchangeResult)
+
+![image](https://github.com/user-attachments/assets/c1696788-e97f-4015-8713-8234b816227a)
+
 Added entering message and showing an array of messages (component Task1Form2)
 
 ![image](https://github.com/user-attachments/assets/04fe1a3f-20f4-4566-9363-6994dde633d7)
