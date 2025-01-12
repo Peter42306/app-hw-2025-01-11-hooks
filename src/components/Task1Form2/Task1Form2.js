@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button, Card, Container, FloatingLabel, Form } from 'react-bootstrap';
+import { Button, Card, Collapse, Container, FloatingLabel, Form } from 'react-bootstrap';
 
 
 const Task1Form2 = () => {
   const [formData, setFormData] = useState({ sender: "", text: "" }); // данные из формы
   const [messages, setMessages] = useState([]); // массив сообщений
+  const [openAddMessageButton, setOpenAddMessageButton] = useState(false);
   
   // Обработчик отправки сообщения
   const handleSendMessage = () => {
@@ -39,10 +40,19 @@ const Task1Form2 = () => {
       <Button 
         className='w-100 mb-3' 
         variant='secondary' 
-        disabled
+        //disabled
+        onClick={() => setOpenAddMessageButton(!openAddMessageButton)}
+        area-control="example-collapse-text"
+        aria-expanded={openAddMessageButton}
       >
         Add new message
       </Button>
+
+      <Collapse in={openAddMessageButton} className='mb-3'>
+        <div id="example-collapse-text">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </Collapse>
       
       <FloatingLabel 
         controlId='floatingInputName'
