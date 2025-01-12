@@ -1,3 +1,7 @@
+Added entering message and showing an array of messages (component Task1Form2)
+
+![image](https://github.com/user-attachments/assets/04fe1a3f-20f4-4566-9363-6994dde633d7)
+
 Added filling the card while printing name & text in form
 
 ![image](https://github.com/user-attachments/assets/e15aebf0-98df-40c0-b786-3ffd8dd20bd2)
